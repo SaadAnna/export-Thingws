@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "91cb6a24ef67b8570e2e0d3417ea942f"
+name = "exportThingws"
+handle = "exportthingws"
+application_url = "https://mil-hk-anyway-diversity.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://mil-hk-anyway-diversity.trycloudflare.com/auth/callback",
+  "https://mil-hk-anyway-diversity.trycloudflare.com/auth/shopify/callback",
+  "https://mil-hk-anyway-diversity.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
