@@ -1,0 +1,36 @@
+.export-modal {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .loading-banner {
+    background: #f6f9fc;
+    border-left: 4px solid #5c6ac4;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-button {
+    background: #5c6ac4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .secondary-button {
+    background: transparent;
+    color: #5c6ac4;
+    border: 1px solid #5c6ac4;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
