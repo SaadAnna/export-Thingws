@@ -1,140 +1,123 @@
+/* Settings.css */
 .settings-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: sans-serif;
-  }
-  
-  .settings-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .cancel-btn,
-  .save-btn {
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .cancel-btn {
-    background: #f3f3f3;
-    border: 1px solid #ccc;
-  }
-  
-  .save-btn {
-    background: #008060;
-    color: #fff;
-    border: none;
-  }
-  
-  .export-box {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 0 1px #e1e1e1;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  
-  .row label {
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  
-  .row input,
-  .row select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    max-width: 300px;
-  }
-  
-  .dynamic-link {
-    color: #5c6ac4;
-    font-size: 0.85rem;
-    margin-top: 5px;
-    display: inline-block;
-  }
-  
-  .columns-box {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 0 0 1px #e1e1e1;
-  }
-  
-  .column-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .handle {
-    margin-right: 10px;
-    cursor: grab;
-  }
-  
-  .switch-label {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    color: #aaa;
-  }
-  
-  .switch-label input {
-    margin-right: 8px;
-  }
-  
-  .switch-label.active span {
-    color: #333;
-  }
-  
-  .column-config {
-    margin-top: 1.5rem;
-  }
-  
-  .column-config label {
-    font-weight: 500;
-    display: block;
-    margin-top: 1rem;
-  }
-  
-  .column-config input {
-    padding: 8px;
-    width: 300px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
-  
-  .tag-container {
-    display: flex;
-    gap: 10px;
-    margin-top: 0.5rem;
-  }
-  
-  .tag {
-    background: #e6e6e6;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-  }
-  
-  .add-column-btn {
-    margin-top: 1rem;
-    padding: 8px 14px;
-    background: #f4f4f4;
-    border: 1px dashed #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+}
+
+.export-box, .columns-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.row {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.row input[type="text"],
+.row select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.dynamic-link {
+  color: #2a7ae2;
+  font-size: 13px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.columns-box .column-row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+.handle {
+  margin-right: 12px;
+  font-size: 18px;
+  cursor: grab;
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.switch-label input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+.switch-label.active span {
+  font-weight: bold;
+}
+
+.column-config {
+  margin-top: 20px;
+}
+
+.column-config label {
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+}
+
+.column-config input[type="text"] {
+  padding: 6px 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.column-config .tag-container {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #e1f0ff;
+  color: #2a7ae2;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.add-column-btn {
+  margin-top: 20px;
+  padding: 10px 14px;
+  border: none;
+  background: #2a7ae2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-column-btn:hover {
+  background: #1a5ac7;
+}
